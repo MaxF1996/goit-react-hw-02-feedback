@@ -1,17 +1,15 @@
 import styled from 'styled-components';
 
-export const FeedbackBlock = styled.div`
-  margin-left: 10px;
-  height: 100vh;
-`;
-export const FeedbackHeader = styled.h1``;
 export const FeedbackButtonsList = styled.ul`
   display: flex;
   column-gap: 10px;
   padding-bottom: 18px;
 `;
+
 export const FeedbackBtnItem = styled.li``;
+
 export const FeedbackButton = styled.button`
+  text-transform: capitalize;
   border: 2px solid black;
   padding: 7px;
   border-radius: 5px;
@@ -24,13 +22,16 @@ export const FeedbackButton = styled.button`
     border-color: white;
     background-color: black;
   }
-  :active {
-    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.75);
+  &[name='good']:active {
+    border-color: green;
+    color: green;
+  }
+  &[name='neutral']:active {
+    border-color: yellow;
+    color: yellow;
+  }
+  &[name='bad']:active {
+    border-color: red;
+    color: red;
   }
 `;
-export const FeedbackSubheader = styled.h2``;
-export const FeedbackStatsList = styled.ul``;
-export const FeedbackStat = styled.li`
-  font-weight: 600;
-`;
-export const Indicator = styled.span``;
