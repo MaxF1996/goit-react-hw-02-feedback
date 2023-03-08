@@ -1,8 +1,10 @@
 @import-normalize; /* bring in normalize.css styles */
 
 body {
+  margin: 0;
   font-family: sans-serif;
   line-height: 1.5;
+  background-color: #c5c1c1;
 }
 h1,
 h2,
@@ -42,4 +44,27 @@ ul {
   border-collapse: collapse;
   border-spacing: 0;
   background-image: none;
+}
+
+button {
+  background: none repeat scroll 0 0 transparent;
+  border: medium none;
+  border-spacing: 0;
+  color: #26589f;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.42rem;
+  list-style: none outside none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
