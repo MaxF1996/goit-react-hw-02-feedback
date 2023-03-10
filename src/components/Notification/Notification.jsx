@@ -5,7 +5,7 @@ const Notification = ({ message }) => {
   return <NotificationText>{message || 'Nothing to display'}</NotificationText>;
 };
 
-Notification.prototype = {
+Notification.propTypes = {
   message: PropTypes.string,
 };
 

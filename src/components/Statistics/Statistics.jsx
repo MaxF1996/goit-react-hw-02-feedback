@@ -23,7 +23,7 @@ const Statistics = ({ good = 0, neutral = 0, bad = 0, total = 0, positivePercent
   );
 };
 
-Statistics.prototype = {
+Statistics.propTypes = {
   good: PropTypes.number,
   neutral: PropTypes.number,
   bad: PropTypes.number,
